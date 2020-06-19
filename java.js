@@ -124,8 +124,6 @@ else {
     $("#five-pm").addClass("present");
 }
 
-$(".time-block").on("click", "p", function() {
-    var text = $(this)
-      .text()
-      .trim();
+$(".saveBtn").on("click", function() {
+    console.log("you clicked save");
   });
