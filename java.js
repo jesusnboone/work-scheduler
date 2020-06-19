@@ -123,3 +123,9 @@ else if (moment().isBefore(fivePmStart)) {
 else {
     $("#five-pm").addClass("present");
 }
+
+$(".time-block").on("click", "p", function() {
+    var text = $(this)
+      .text()
+      .trim();
+  });
