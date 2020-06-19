@@ -22,7 +22,7 @@ var fivePmEnd = moment().startOf('day').add(17, 'hour').endOf('hour');
 var fivePmStart = moment().startOf('day').add(17, 'hour').startOf('hour');
 
 //current date displayed
-$("currentDay").innerHTML = today
+$("#currentDay").html(today);
 //if functions for deciding time slot class
 if (moment().isAfter(eightAmEnd)) {
     $("#eight-am").addClass("past");
