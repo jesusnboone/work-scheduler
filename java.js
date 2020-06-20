@@ -123,7 +123,7 @@ else if (moment().isBefore(fivePmStart)) {
 else {
     $("#five-pm").addClass("present");
 }
-
+//functions to set and recieve localStorage for our user inputs
 $('.saveBtn').on('click', function(){
 
     $('input[type="text"]').each(function(){    
