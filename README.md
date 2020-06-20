@@ -16,7 +16,7 @@ https://github.com/jesusnboone/work-scheduler
 Up-to-date Google Chrome browser
 
 ## Languages
-HTML, CSS, Javascript
+HTML, CSS, Javascript, Moment.js
 
 ## Built with
 VS Code, Github, Git bash
