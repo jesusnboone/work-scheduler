@@ -124,6 +124,22 @@ else {
     $("#five-pm").addClass("present");
 }
 
-$(".saveBtn").on("click", function() {
-    console.log("you clicked save");
-  });
+$('.saveBtn').on('click', function(){
+
+    $('input[type="text"]').each(function(){    
+        var id = $(this).attr('id');
+        var value = $(this).val();
+       localStorage.setItem(id, value);
+
+    });   
+});
+
+$(window).on('load', function(){
+    $('input[type="text"]').each(function(){    
+        var id = $(this).attr('id');
+        var value = localStorage.getItem(id);
+
+        $(this).val(value);
+
+    }); 
+});
